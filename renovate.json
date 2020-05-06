@@ -2,7 +2,6 @@
   "enabled": "true",
   "extends": [
     "config:base",
-    "schedule:nonOfficeHours",
     ":assignee(chipwolf)"
   ],
   "kubernetes": {
