@@ -1,0 +1,27 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: pomerium
+  namespace: pomerium
+spec:
+  releaseName: pomerium
+  chart:
+    repository: https://helm.pomerium.io
+    name: pomerium
+    version: 8.5.5
+  valuesFrom:
+  - secretKeyRef:
+      name: pomerium-values
+  values:
+    service:
+      type: NodePort
+    config:
+      rootDomain: mc.playhrzn.com
+      policy:
+        - from: https://ops.mc.playhrzn.com
+          to: http://kube-ops-view.monitoring.svc.cluster.local
+          allowed_domains:
+            - chipwolf.uk
+    operator:
+      enabled: true
