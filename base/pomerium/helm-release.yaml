@@ -14,12 +14,25 @@ spec:
     - secretKeyRef:
         name: pomerium-values
   values:
+    ingress:
+      annotations:
+        kubernetes.io/ingress.class: "nginx"
+        kubernetes.io/ingress.allow-http: "false"
+        external-dns.alpha.kubernetes.io/hostname: |
+          ops2.mc.playhrzn.com,
+          forwardauth.mc.playhrzn.com,
+          authorize.mc.playhrzn.com,
+          authenticate.mc.playhrzn.com
+        nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+        nginx.ingress.kubernetes.io/proxy-buffer-size: "16K"
+    forwardAuth:
+      enabled: true
     service:
       type: NodePort
     config:
       rootDomain: mc.playhrzn.com
       policy:
-        - from: https://ops.mc.playhrzn.com
+        - from: https://ops2.mc.playhrzn.com
           to: http://kube-ops-view.monitoring.svc.cluster.local
           allowed_domains:
             - chipwolf.uk
