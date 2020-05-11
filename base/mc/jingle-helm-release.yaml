@@ -89,4 +89,4 @@ spec:
         enabled: true
         Size: 5Gi
       storageClass: ebs-sc
-      #volumeName: pvc-bc6ba9b7-c4ce-425b-b300-6b21d83df743
+      volumeName: pvc-92fe93df-0396-41e0-b851-63412aa0736f
