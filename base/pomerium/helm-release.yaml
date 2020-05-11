@@ -11,8 +11,8 @@ spec:
     name: pomerium
     version: 8.5.5
   valuesFrom:
-  - secretKeyRef:
-      name: pomerium-values
+    - secretKeyRef:
+        name: pomerium-values
   values:
     service:
       type: NodePort
