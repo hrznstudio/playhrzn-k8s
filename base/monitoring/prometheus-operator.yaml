@@ -16,10 +16,11 @@ spec:
       defaultDashboardsEnabled: true
       grafana.ini:
         users:
-          viewers_can_edit: true
+          viewers_can_edit: false
         auth:
           disable_login_form: true
-          disable_signout_menu: true
+          signout_redirect_url: /.pomerium/sign_out
+          disable_signout_menu: false
         auth.anonymous:
           enabled: true
           org_role: Viewer
