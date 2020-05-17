@@ -38,7 +38,7 @@ spec:
       initialDelaySeconds: 300
       periodSeconds: 10
     minecraftServer:
-      image: itzg/minecraft-server:openj9@sha256:9db25fe2a45e672a127a48f0929f744441a5b52d43fc220ba6a2d66e6e51b3ca
+      image: itzg/minecraft-server:openj9@sha256:645a39dd29045496fc3f580d2121e0e7edf83331fb754f185e073adf63ff1e50
       eula: "TRUE"
       version: "1.12.2"
       type: "PAPER"
