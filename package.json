@@ -3,7 +3,7 @@
   "version": "2.19.9",
   "dependencies": {},
   "devDependencies": {
-    "semantic-release": "^17.0.7"
+    "semantic-release": "17.0.7"
   },
   "repository": {
     "type": "git",
