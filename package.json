@@ -1,0 +1,18 @@
+{
+  "name": "playhrzn-k8s",
+  "version": "2.19.9",
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-release": "^17.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRZNStudio/playhrzn-k8s.git"
+  },
+  "author": "Chip Wolf <hello@chipwolf.uk>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/HRZNStudio/playhrzn-k8s/issues"
+  },
+  "homepage": "https://github.com/HRZNStudio/playhrzn-k8s#readme"
+}
