@@ -13,7 +13,7 @@ spec:
   values:
     domain: playhrzn.com
     minecraftServer:
-      image: itzg/minecraft-server:latest@sha256:4a518e83e8c7862ae89684ece2e7e9fc72e623067ab3b76375b8c5d7da1bbbee
+      image: itzg/minecraft-server:latest@sha256:fe3c07a7d5ac8f5c45ddce66a22728dd38af4b47515994fe5288a9d51475f5d6
       eula: "TRUE"
       version: "1.14.4"
       type: "PAPER"
