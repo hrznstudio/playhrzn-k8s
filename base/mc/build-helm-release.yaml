@@ -16,9 +16,9 @@ spec:
     minecraftServer:
       image: itzg/minecraft-server:latest@sha256:ccd52fdb44d92dd07f157c6c5487f9fa70584f518769a14f4445cf676319923c
       eula: "TRUE"
-      version: "1.16.3"
+      version: "1.16.4"
       type: "FORGE"
-      forgeVersion: "34.1.42"
+      forgeVersion: "35.0.18"
       maxtickTime: -1
       memory: 6G
       rconWebAdmin:
