@@ -14,7 +14,7 @@ spec:
     # ref: charts/minecraft/values.yaml
     domain: playhrzn.com
     minecraftServer:
-      image: itzg/minecraft-server:latest@sha256:25165d5ad226aa099862eb5a5cfc66f9f9ade4ba44e54c2c5913c8483cac3e2a
+      image: itzg/minecraft-server:latest@sha256:c7d20f270fe6dd870a1ccb6955fe70eb6626b203e274721fe2363d47b15f9292
       eula: "TRUE"
       version: "1.14.4"
       type: "PAPER"
